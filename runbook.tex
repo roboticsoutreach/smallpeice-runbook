@@ -1,0 +1,26 @@
+\documentclass[a4paper]{report}
+
+\usepackage{tocloft}
+\usepackage{titlesec}
+\usepackage{amssymb}
+
+\input{commands}
+
+\begin{document}
+
+\tableofcontents
+\clearpage
+\listoffigures
+\clearpage
+\listoftables
+\clearpage
+\listoftask
+\clearpage
+
+\include{sections/overview}
+\chapter{Organisation}
+
+\chapter{Week activities}
+\include{sections/workshops}
+
+\end{document}

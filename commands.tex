@@ -1,0 +1,15 @@
+
+% task listing
+
+\newcommand{\listtaskname}{List of Tasks}
+\newlistof{task}{tsk}{\listtaskname}
+
+\newcommand{\task}[1]{
+\refstepcounter{task}
+\addcontentsline{tsk}{task}{\protect\numberline{\thechapter:\thetask}#1}
+\par\noindent\textbf{$\bullet$ TASK: \thechapter:\thetask. #1}
+}
+
+\renewcommand{\cfttaskpresnum}{{\huge$\square$  }}
+
+\renewcommand{\cfttasknumwidth}{5em}
